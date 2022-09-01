@@ -1,5 +1,5 @@
 import json
-from nltk_utils import tokinize,stem, bag_of_words
+from nltk_utils import tokenize,stem, bag_of_words
 import numpy as np
 from model import NeuralNet
 import torch
@@ -18,7 +18,7 @@ for intent in intents['intents']:
     tag = intent['tag']
     tags.append(tag)
     for pattern in intent['patterns']:
-        w = tokinize(pattern)
+        w = tokenize(pattern)
         all_words.extend(w)
         xy.append((w, tag))
 ignore_words = ['?','!','.','.',',']

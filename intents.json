@@ -32,46 +32,114 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
+      "tag": "login_credentials",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "How can I get New User-id and password",
+        "How can I get New login credentials",
+        "how to created account"
       ],
-      "responses": ["We sell coffee and tea", "We have coffee and tea"]
+      "responses": ["Please click on Sign Up link on AICTE Web-portal"]
     },
     {
-      "tag": "payments",
+      "tag": " forgotten password",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "I have forgotten password for logging in AICTE Web Portal",
+        "forgotten password",
+        "lost my password",
+        "don't remember my password",
+        "lost my user_credentials",
+        "lost my login id password",
+        "i have forget password",
+        "forget password"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        " Please refer User Manual for Forgotten Password available @ https://aicteindia.org/bureaus/approval/ap_2020-21"
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "user id Forgot Password",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": ["Delivery takes 2-4 days", "Shipping takes 2-4 days"]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Is User Id field mandatory for 'Forgot Password' form",
+        "Don't have the user-id in forget password"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "User Id is NOT mandatory. Only Permanent Institute Id is required for existing institute.",
+        "Only Permanent Institute Id is required for existing institute"
+      ]
+    },
+    {
+      "tag": "'Invalid Institute's Credentials",
+      "patterns": [
+        "When I try to login with Institute's Credentials, error message 'Invalid Username and Password' is displayed.",
+        "shows invalid institued credentials",
+        "can not log in through instituted credentials"
+      ],
+      "responses": [
+        "Recheck the login credentials. Confirm whether someone else has logged in with the same credentials (Please note that per institute only ONE session is allowed. Hence, if someone tries for 2nd session then again invalid user name and password message will popup).If no session is live and still getting an invalid username and password message, then the password might be incorrect. In such cases, you can Request for forgot password"
+      ]
+    },
+    {
+      "tag": "Apply Approval",
+      "patterns": [
+        "6. How can I apply for Approval Process",
+        "How can I apply for Approval Process for our institute.",
+        "how to register for apply process"
+      ],
+      "responses": [
+        "Please login to AICTE Webportal using your institute’s login credentials then click on Approval Process icon. Follow the instructions given in User Manuals/Videos and apply accordingly. For more information, please go through Approval Process Handbook 2020-21."
+      ]
+    },
+    {
+      "tag": "generatereport",
+      "patterns": [
+        "I am not able to generate report?",
+        "how to generate report",
+        "how i created generate report",
+        "help to created generate"
+      ],
+      "responses": [
+        "Please refer User Manual for Report Generation to generate Reports.",
+        "go through User Manual for Report Generation "
+      ]
+    },
+    {
+      "tag": "delete old faculty details",
+      "patterns": [
+        "How to delete old faculty details?",
+        "remove faculty details"
+      ],
+      "responses": [
+        "Faculty record cannot be deleted. Faculty can be marked as Duplicate or Left the Institute under HOI & Faculty Details tab."
+      ]
+    },
+    {
+      "tag": "Aadhaar PAN",
+      "patterns": [
+        " Is Aadhaar/PAN details mandatory to update faculty details in AICTE Web Portal?",
+        " Is Aadhaar/PAN details required to update faculty details in AICTE Web Portal?"
+      ],
+      "responses": ["Yes."]
+    },
+    {
+      "tag": "transfer faculty record",
+      "patterns": [
+        "How to transfer faculty record(individual) from one institute to another institute?",
+        "How to transfer faculty record to another institute?"
+      ],
+      "responses": [
+        "This facility is available under HOI & Faculty tab. Before transferring any individual faculty record from one institute to other institute, the faculty should be compulsorily marked as left the institute in the previous institute."
+      ]
+    },
+    {
+      "tag": "Approval",
+      "patterns": [
+        "Where I can find the information related to Approval Process",
+        "Approval Process",
+        "Approval Information",
+        "find information about approval"
+      ],
+      "responses": [
+        "Information related to Approval Process available on AICTE Website's Homepage>Quick Links>Approval Process 2020-21."
       ]
     }
   ]
