@@ -68,7 +68,7 @@
       ]
     },
     {
-      "tag": "'Invalid Institute's Credentials",
+      "tag": "Invalid Institute's Credentials",
       "patterns": [
         "When I try to login with Institute's Credentials, error message 'Invalid Username and Password' is displayed.",
         "shows invalid institued credentials",
@@ -81,12 +81,12 @@
     {
       "tag": "Apply Approval",
       "patterns": [
-        "6. How can I apply for Approval Process",
+        " How can I apply for Approval Process",
         "How can I apply for Approval Process for our institute.",
         "how to register for apply process"
       ],
       "responses": [
-        "Please login to AICTE Webportal using your institute’s login credentials then click on Approval Process icon. Follow the instructions given in User Manuals/Videos and apply accordingly. For more information, please go through Approval Process Handbook 2020-21."
+        "Please login to AICTE Webportal using your institute login credentials then click on Approval Process icon. Follow the instructions given in User Manuals/Videos and apply accordingly. For more information, please go through Approval Process Handbook 2020-21."
       ]
     },
     {
