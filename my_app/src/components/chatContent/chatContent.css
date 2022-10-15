@@ -102,6 +102,8 @@
   border-radius: 8px;
 }
 .sendNewMessage button {
+  padding: 0;
+  margin-right: 10px;
   width: 50px;
   height: 36px;
   background-color: #ecefff;
@@ -111,7 +113,6 @@
   cursor: pointer;
   font-size: 16px;
   color: #4665ff;
-  padding: 0;
   border-radius: 5px;
   line-height: 36px;
   transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);

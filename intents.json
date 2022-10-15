@@ -12,7 +12,6 @@
       ],
       "responses": [
         "Hey :-)",
-        "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
@@ -116,7 +115,9 @@
       "tag": "Aadhaar PAN",
       "patterns": [
         " Is Aadhaar/PAN details mandatory to update faculty details in AICTE Web Portal?",
-        " Is Aadhaar/PAN details required to update faculty details in AICTE Web Portal?"
+        " Is Aadhaar/PAN details required to update faculty details in AICTE Web Portal?",
+        " Is Aadhaar details required to update faculty details in AICTE Web Portal?",
+        " Is PAN details required to update faculty details in AICTE Web Portal?"
       ],
       "responses": ["Yes."]
     },
@@ -131,16 +132,219 @@
       ]
     },
     {
-      "tag": "Approval",
+      "tag": "import method",
       "patterns": [
-        "Where I can find the information related to Approval Process",
-        "Approval Process",
-        "Approval Information",
-        "find information about approval"
+        "How to update/add the faculty details by import method?",
+        "Import method",
+        "add facility by import method",
+        "update details by import method"
       ],
       "responses": [
-        "Information related to Approval Process available on AICTE Website's Homepage>Quick Links>Approval Process 2020-21."
+        "Please follow the User Manual available https://aicte-india.org/bureaus/approval/ap_2020-21 for uploading faculty details by import method."
       ]
+    },
+    {
+      "tag": "Online Payment",
+      "patterns": [
+        "I have made Online Payment but amount is not updated in portal",
+        "online payment stuck",
+        "online payment not done,but not showing in protal",
+        "online payemt not showing in portal"
+      ],
+      "responses": [
+        "Generally, payment receipt gets updated immediately. In case, your payment receipt is not updated then click on View Transaction Button under Payment tab. Otherwise, it will get updated in 48 to 72 working hours (2 to 3 working days). In case it is not updated even after that, please raise grievance with transaction details (Transaction Id generated while making the payment) through Online Grievance Redressal form. Link is available on Approval Process 2020-21 page."
+      ]
+    },
+    {
+      "tag": "not able to make payment",
+      "patterns": [
+        "I am not able to make payment because AICTE Website is not directing to Payment Gateway.",
+        "not open payment gateway",
+        "error into the payment gateway",
+        "payment gateway vot open"
+      ],
+      "responses": [
+        "Please check whether your application has been submitted successfully or not. If submitted, then allow Popups for AICTE Website through Web browser URL."
+      ]
+    },
+    {
+      "tag": "payment and approval related issues",
+      "patterns": [
+        "Where to send the queries related to portal, payment and approval related issues for the",
+        "payemt related issue",
+        "approval related issue",
+        "query related to portal, pyament and approval"
+      ],
+      "responses": [
+        "Raise a Grievance via grievance form available at https://www.facilities.aicteindia.org/ApprovalProcess/apformEmail.php."
+      ]
+    },
+    {
+      "tag": "apply afresh",
+      "patterns": [
+        "Our Institution was allotted a User ID last year as a new Institution. Some information was uploaded but the application could not be submitted at that time. Now I want to know that the same User ID can be used for approval process 2020-21.",
+        "user id gets but appication not submit",
+        "application could not be submitted last year but get user Id"
+      ],
+      "responses": [
+        "No, Institute need to apply afresh for getting login credentials."
+      ]
+    },
+    {
+      "tag": "change read-only",
+      "patterns": [
+        "We want to change details which are non-editable / read-only?",
+        "how to changes non-editable details",
+        "can i cnages non-editable details",
+        "ways to changes read-only datails"
+      ],
+      "responses": [
+        "You may contact the Approval Bureau or Regional Office.",
+        "Contact the Approval Bureau or regional office"
+      ]
+    },
+    {
+      "tag": "submit wrong details",
+      "patterns": [
+        "By mistake, I have submitted my application. Is it possible to reopen the application once again to update the few details? ",
+        "update details after submit",
+        "how to update deatail after submit the appication",
+        "fill wrong deatils there is way to changes it."
+      ],
+      "responses": [
+        "If you have not created any payment record under Payment tab then you can re-open the submitted application only once by clicking on re-open application button available under Attachments and Submit tab.                             Note: After re-open, the application should be resubmitted. Otherwise application will be treated as 'Application Not Submitted'."
+      ]
+    },
+    {
+      "tag": " forgotten password email not recive",
+      "patterns": [
+        " forgotten password email not recive",
+        "I have applied for forgot password but still I did not receive password on my registered email?",
+        "why forget password email not recice",
+        "error in forget password email not reviced",
+        "I cant receive any email of forgetting password"
+      ],
+      "responses": [
+        "Institute need to submit the Affidavit-1 in the respective Regional Office. Regional Officer will flag the Affidavit Received against your request on web portal. Then password will be sent to the institute’s registered email id. Please check the Spam Folder also in your mailbox for forgot password email. In case of any issue, you may raise your grievance online by Grievance link available https://aicte-india.org/bureaus/approval/ap_2020-21"
+      ]
+    },
+    {
+      "tag": "AICTE APPROVED University",
+      "patterns": [
+        "Indian Institute of Science is acite approved University",
+        "Jawaharlal Nehru University is acite approved University",
+        "Banaras Hindu University is acite approved University",
+        "Calcutta University is acite approved University",
+        "Amrita Vishwa Vidyapeetham is acite approved University",
+        "Jamia Millia Islamia is acite approved University",
+        "Manipal Academy of Higher Education is acite approved University",
+        "Jadavpur University is acite approved University",
+        "University of Hyderabad is acite approved University",
+        "Aligarh Muslim University is acite approved University",
+        "Savitribai Phule Pune University is acite approved University",
+        "Indian Institute of Science is acite approved University",
+        "Jawaharlal Nehru University is acite approved University",
+        "Banaras Hindu University is acite approved University",
+        "Calcutta University is acite approved University",
+        "Amrita Vishwa Vidyapeetham is acite approved University",
+        "Jamia Millia Islamia is acite approved University",
+        "Manipal Academy of Higher Education is acite approved University",
+        "Jadavpur University is acite approved University",
+        "University of Hyderabad is acite approved University",
+        "Aligarh Muslim University is acite approved University",
+        "Savitribai Phule Pune University is acite approved University",
+        "University of Delhi is acite approved University",
+        "Vellore Institute of Technology is acite approved University",
+        "Bharathiar University is acite approved University",
+        "Institute of Chemical Technology is acite approved University",
+        "Anna University is acite approved University",
+        "Graphic era is acite approved University",
+        "Birla Institute of Technology & Science -Pilani is acite approved University",
+        "Homi Bhabha National Institute is acite approved University",
+        "Mysore University is acite approved University",
+        "Siksha `O` Anusandhan is acite approved University",
+        "Kalinga Institute of Industrial Technology is acite approved University",
+        "Shanmugha Arts Science Technology & Research Academy is acite approved University",
+        "Panjab University is acite approved University",
+        "Andhra University, Visakhapatnam is acite approved University",
+        "Amity University is acite approved University",
+        "Thapar Institute of Engineering and Technology is acite approved University",
+        "Kerala University is acite approved University",
+        "University of Madras is acite approved University",
+        "Saveetha Institute of Medical and Technical Sciences is acite approved University",
+        "S.R.M. Institute of Science and Technology is acite approved University",
+        "Mahatma Gandhi University is acite approved University",
+        "Osmania University is acite approved University",
+        "Alagappa University is acite approved University",
+        "JSS Academy of Higher Education and Research is acite approved University",
+        "Banasthali Vidyapith is acite approved University",
+        "Koneru Lakshmaiah Education Foundation University (K L College of Engineering) is acite approved University",
+        "Tata Institute of Social Sciences is acite approved University",
+        "Symbiosis International is acite approved University",
+        "King George`s Medical University is acite approved University",
+        "Sathyabama Institute of Science and Technology is acite approved University",
+        "Jamia Hamdard is acite approved University",
+        "Delhi Technological University is acite approved University",
+        "Gujarat University is acite approved University",
+        "Cochin University of Science and Technology is acite approved University",
+        "Gauhati University is acite approved University",
+        "Tezpur University is acite approved University",
+        "Sri Ramachandra Institute of Higher Education and Research is acite approved University",
+        "University of Kashmir is acite approved University",
+        "Dr. D. Y. Patil Vidyapeeth is acite approved University",
+        "Kalasalingam Academy of Research and Education is acite approved University",
+        "Bharath Institute of Higher Education & Research is acite approved University",
+        "Chandigarh University is acite approved University",
+        "Guru Nanak Dev University is acite approved University",
+        "Sri Venkateswara University is acite approved University",
+        "SVKM`s Narsee Monjee Institute of Management Studies is acite approved University",
+        "Shiv Nadar University is acite approved University",
+        "Bharathidasan University is acite approved University",
+        "Pondicherry University is acite approved University",
+        "North Eastern Hill University is acite approved University",
+        "Calicut University is acite approved University",
+        "Datta Meghe Institute of Medical Sciences is acite approved University",
+        "Lovely Professional University is acite approved University",
+        "Madurai Kamaraj University is acite approved University",
+        "Visva Bharati is acite approved University",
+        "Babasheb Bhimrao Ambedkar University is acite approved University",
+        "University of Jammu is acite approved University",
+        "Gandhi Institute of Technology and Management is acite approved University",
+        "Bharati Vidyapeeth is acite approved University",
+        "Bangalore University is acite approved University",
+        "Manonmaniam Sundaranar University is acite approved University",
+        "Mumbai University is acite approved University",
+        "Padmashree Dr. D. Y. Patil Vidyapeeth, Mumbai is acite approved University",
+        "Pandit Deendayal Petroleum University is acite approved University",
+        "Periyar University is acite approved University",
+        "Avinashilingam Institute for Home Science & Higher Education for Women is acite approved University",
+        "Dr. Babasaheb Ambedkar Marathwada University is acite approved University",
+        "NITTE is acite approved University",
+        "Maharshi Dayanand University is acite approved University",
+        "Guru Gobind Singh Indraprastha University is acite approved University",
+        "Sri Balaji Vidyapeeth Mahatma Gandhi Medical College Campus is acite approved University",
+        "Kuvempu University is acite approved University",
+        "Visvesvaraya Technological University is acite approved University",
+        "International Institute of Information Technology Hyderabad is acite approved University",
+        "Central University of Punjab is acite approved University",
+        "The University of Burdwan is acite approved University",
+        "Birla Institute of Technolgy is acite approved University",
+        "Utkal University is acite approved University",
+        "Guru Jambheshwar University of Science and Technology is acite approved University",
+        "Shoolini University of Biotechnology and Management Sciences is acite approved University",
+        "Maharaja Sayajirao University of Baroda is acite approved University",
+        "KLE Academy of Higher Education and Research is acite approved University",
+        "Chettinad Academy of Research and Education is acite approved University",
+        "Assam University is acite approved University",
+        "Dayalbagh Educational Institute is acite approved University",
+        "Ashoka University is acite approved University",
+        "Goa University is acite approved University",
+        "Vignan's Foundation for Science, Technology and Research is acite approved University",
+        "Graphic Era University is acite approved University",
+        "Jain university, Ban is acite approved University",
+        "University of Petroleum and Energy Studies is acite approved University"
+      ],
+      "responses": ["Yes,it is approved BY AICTE"]
     }
   ]
 }

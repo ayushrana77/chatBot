@@ -21,6 +21,7 @@ const postData = async (query) => {
     return "";
   }
 };
+
 export default class ChatContent extends Component {
   messagesEndRef = createRef(null);
   chatItms = [
@@ -86,10 +87,31 @@ export default class ChatContent extends Component {
     this.scrollToBottom();
   }
   onStateChange = (e) => {
+    console.log(e.target.value);
     this.setState({ msg: e.target.value });
   };
   onHandleClick = (e) => {
     this.addToChat();
+  };
+  onVoiceClick = (e) => {
+    const SpeechRecognition =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = new SpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.lang = "en-US";
+    recognition.start();
+    var self = this;
+    recognition.onresult = function(e) {
+      var speak = e.results[0][0].transcript;
+      document.getElementById("speech").value = speak;
+      recognition.stop();
+      self.setState({ msg: speak });
+    };
+    recognition.onerror = function(e) {
+      recognition.stop();
+    };
   };
 
   render() {
@@ -126,11 +148,19 @@ export default class ChatContent extends Component {
               placeholder="Type a message here"
               onChange={this.onStateChange}
               value={this.state.msg}
+              id="speech"
             />
             <button
               className="btnSendMsg"
               id="sendMsgBtn"
+              onClick={this.onVoiceClick}
+            >
+              <i className="fa fa-microphone"></i>
+            </button>
+            <button
+              className="btnSendMsg"
               onClick={this.onHandleClick}
+              id="sendMsgBtn"
             >
               <i>Send</i>
             </button>
